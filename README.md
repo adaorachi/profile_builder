@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# PROFILE BUILDER APP - ProfileBuilder.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Profile Builder application build using React for the front-end processes and IndexedDB API for storing data. 
 
-## Available Scripts
+To answer the required questions:
 
-In the project directory, you can run:
+1. What was your approach for this project? Did it change as you developed the app further?
 
-### `npm start`
+My approach for this project at the start was to create a two-pages application; the "view profile" and "edit profile" pages, following the instructions as stated in the provided documents. To use the localStorage as a means to store data.
+My approach as I developed the app further changed slightly. Since, the project is an application, I decided to add extra feaatures such as as Authentication and Authorisation features. I created a Login and Register Pages where users can be authenticated in order to use the application. Secondly, I used the [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) and the Dexie Package to store data. This is because IndexedDB provides a richer and effective way of storing data and also comes with data query features. Thirdly, I made the app responsive, i.e optimised to be functional and aesthetically pleasing on devices of different sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. What were the challenges you faced?
+The following were the challenges I faced - getting familiar with the IndexedDB queries and how best to implement them. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. How differently will you do if you had a couple of more days to complete the assignment? What if you have one full month?
+If I were given more days, I would like to use and implement TypeScript for this project in order to make it more robust and for better scaling. Secondly, to implement and add some tests using JEST.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Table of Contents
 
-### `npm run build`
+* [Built With](#built-with)
+* [Live Preview](#live-preview)
+* [Required Installations](#required-installations)
+* [Instalation of This App](#instalation)
+* [License](#license)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*   React
+*   CSS
+*   IndexedDB
+*   Webpack
 
-### `npm run eject`
+<!-- LIVE PREVIEW -->
+## Live Preview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This is the link to the live preview. Feel free to visit.<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Live version of the project: [Profile Builder App](https://profilebuilder.netlify.app/)<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- REQUIRED INSTALLATION -->
+## Required Installations
 
-## Learn More
+<p>If you want a copy of this project running on your machine you have to install:</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* <a href="https://nodejs.org/en/">Node.js (v5. 2.0 or greater)</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- INSTALLATION -->
+## Installation of This App
 
-### Code Splitting
+Once you have installed the required package shown on the [Required Installations](#required-installations), proceed with the following steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the Repository,
 
-### Analyzing the Bundle Size
+```Shell
+your@pc:~$ git clone https://github.com/adaorachi/profile_builder
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Move into the downloaded folder
 
-### Making a Progressive Web App
+```Shell
+your@pc:~$ cd profile_builder
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Get the dependencies needed for the app
 
-### Advanced Configuration
+```Shell
+your@pc:~$ npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start the server and use the app
 
-### Deployment
+```Shell
+your@pc:~$ npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The App navigates to the Login Page
 
-### `npm run build` fails to minify
+```Shell
+your@pc:~$ Log into the app with your login details if you are an existing user or Register with your details if you are a new user.
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+<!-- CONTACT -->
+## Author
+
+ MaryAnn Chukwuka
+ - Github: [@adaorachi](https://github.com/adaorachi)
+ - Linkedin: [MaryAnn Chukwuka](https://www.linkedin.com/in/adaorachi/)
+
