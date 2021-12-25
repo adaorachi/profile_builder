@@ -61,11 +61,12 @@ export const getCurrentUserDetail = async () => {
   }
 };
 
-export const editUserDetails = async (details) => {
+export const editUserDetails = async (details, isSaved) => {
   try {
     const userId = await isCurrentUser();
     const { id } = userId?.[0];
-    return await db.userDetails.update(id, details);
+    const updateUser = await db.userDetails.update(id, details);
+    isSaved(true);
   } catch (error) {
     console.log(error);
   }

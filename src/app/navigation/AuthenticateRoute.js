@@ -13,7 +13,7 @@ export const UserIsAuthenticatedRoute = ({ children }) => {
     return <Loader />;
   }
 
-  return auth.length ? children : <Navigate to="/login" />;
+  return auth?.length ? children : <Navigate to="/login" />;
 };
 
 export const UserIsNotAuthenticatedRoute = ({ children }) => {
@@ -25,5 +25,5 @@ export const UserIsNotAuthenticatedRoute = ({ children }) => {
     return <Loader />;
   }
 
-  return !auth.length ? children : <Navigate to="/" />;
+  return !auth?.length ? children : <Navigate to="/" />;
 };

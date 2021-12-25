@@ -43,7 +43,6 @@ export default function AppForm({
       onSubmit={(values, actions) => {
         setIsSubmitting(true);
         setTimeout(() => {
-          console.log(values, 'values');
           handleSubmit(values, actions.resetForm);
           setIsSubmitting(false);
         }, 2000);

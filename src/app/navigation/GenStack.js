@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom';
-import { EditProfile, ViewProfile } from '../pages';
+import { EditProfile, ViewProfile, Home } from '../pages';
 import { UserIsAuthenticatedRoute } from './AuthenticateRoute';
 
 const GenStack = (
@@ -7,7 +7,7 @@ const GenStack = (
     {[
       { path: '/edit-profile', element: <EditProfile /> },
       { path: '/view-profile', element: <ViewProfile /> },
-      { path: '/', element: <ViewProfile /> },
+      { path: '/', element: <Home /> },
     ].map((r, ind) => (
       <Route
         key={ind}
